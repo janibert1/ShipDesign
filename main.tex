@@ -10,14 +10,11 @@
 \usepackage{hyperref}
 \usepackage{natbib}
 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \renewcommand{\headrulewidth}{0pt}
 \fancyfoot{}
 \pagenumbering{Arabic}
-%%% Header and Footer %%%
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -25,29 +22,28 @@
 
 %%% Title, Authors, Abstract %%%
 
-
-
 \vspace*{2pt}
 
-{\fontspec{Arial}\fontsize{18}{21}\bfseries Paper Title}
+{\fontspec{Arial}\fontsize{18}{21}\bfseries De Invloed van Laag- en Zero-Emissiebrandstoffen op het Ontwerp van een Handymax Bulkcarrier}
 \vspace{20pt}
 
-\textbf{\fontsize{12}{14}\selectfont Author’s Name\textsuperscript{1,*} and Author’s Name\textsuperscript{2}}
+\textbf{\fontsize{12}{14}\selectfont J.A. Driessen\textsuperscript{1,*} and J. Aarnink\textsuperscript{2}} \\[4pt]
+{\small \textit{[DRAFT --- vul volledige namen/studentnummers aan]}}
 
 \vspace{30pt}
 \begin{center}
-    
+
     {\fontspec{Arial}\fontsize{12}{14}\selectfont {\textit{\textbf{ABSTRACT}}}}
-        
+
     \begin{flushleft}
-            
-        \begin{spacing}{1.0} 
+
+        \begin{spacing}{1.0}
             \fontsize{10}{12}\selectfont
-            \setlength{\parindent}{0.63cm} % 1.27 cm / 2
+            \setlength{\parindent}{0.63cm}
             \setlength{\leftskip}{1.27cm}
             \setlength{\rightskip}{1.27cm}
-    
-            \textit{A short abstract (100-150 words) in a single paragraph should be included here. In this sample paper, we describe and provide the formatting guidelines for submissions to the MT2462 Ship Design Research Assignment (SDRA). Simply insert your information where applicable.}
+
+            De verschuiving naar laag- en zero-emissiebrandstoffen dwingt ontwerpers van bulkcarriers om af te stappen van het traditionele, op ladingcapaciteit gerichte ontwerpproces. Dit literatuuronderzoek onderzoekt de vraag: wat is de invloed van laag- of zero-emissiealternatieve brandstoffen op het ontwerp van een Handymax bulkcarrier? Aan de hand van negen wetenschappelijke bronnen wordt eerst het traditionele scheepsontwerpproces tegenover de energietransitie geplaatst, waarna een gemotiveerde down-selectie van kandidaat-brandstoffen wordt gemaakt voor de gegeven casus (Handymax, Rotterdam--Baltimore, 12--15 kn). Vervolgens wordt de invloed van deze brandstoffen op tankvolume, laadvermogen, indeling en veiligheid besproken, gevolgd door de milieu- en operationele/regelgevende overwegingen (o.a. EU ETS). De literatuur wijst LNG aan als de best onderbouwde overgangsbrandstof op korte termijn en ammoniak als het meest onderzochte zero-carbon alternatief op langere termijn, beide ten koste van laadvermogen en met nieuwe indelings- en veiligheidseisen.
         \end{spacing}
     \end{flushleft}
 
@@ -57,54 +53,108 @@
 \setfulljustify
 \section{KEY WORDS}
 
-List up to 5 key words. Example: Design; LNG; Arctic; Safety. 
-
-\section{NOMENCLATURE}
-
-Optional, but do not use unless it is absolutely necessary. If used, place in alphabetical order, followed by Greek symbols. 
+Alternatieve brandstoffen; Scheepsontwerp; Handymax bulkcarrier; Ammoniak; LNG
 
 %%% Main Text %%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Introduction}
+\section{Introductie}
 
-The body of the paper begins with the Introduction. In the Introduction, state the purpose of the paper, or author’s aim, so that the reader will have a clear concept of the objective(s).  Following the Introduction, text should be organized into logical parts or sections that reflect the instructions for the SDRA. 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+De internationale scheepvaart staat onder toenemende druk om broeikasgasemissies terug te dringen in lijn met de IMO-doelstellingen richting netto-nul in 2050 \citep{tadros2023}. Voor bulkcarriers, van oudsher ontworpen met ladingcapaciteit tegen de laagst mogelijke bouwkosten als primair uitgangspunt \citep{lindstad2022}, betekent dit een fundamentele verschuiving in de ontwerplogica: brandstofkeuze is niet langer een operationele nabeschouwing, maar een randvoorwaarde die al vroeg in het ontwerpproces meegewogen moet worden.
 
-%% Uncomment to check the formatting guidelines:
-\input{Formatting}
+Dit rapport behandelt Deel 1 (Literatuurstudie) van de Ship Design Research Assignment (SDRA) en richt zich op de onderzoeksvraag: wat is de invloed van laag- of zero-emissiealternatieve brandstoffen op het ontwerp van een Handymax bulkcarrier? De casus betreft een moderne Handymax bulkcarrier (lengte 150--200 m, breedte 30--32 m, diepgang 10--12 m, laadvermogen 35.000--50.000 DWT), momenteel op conventionele stookolie (HFO), varend tussen Rotterdam en Baltimore (4340 nm, 12--15 dagen, 12--15 kn), waarbij 80\% van het vermogen naar voortstuwing gaat en 20\% naar hotel- en hulpbelasting, bij een totaal voortstuwingsrendement van 60\%. Kernenergie en metaalpoeders zijn buiten beschouwing gelaten.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Voor de literatuurselectie zijn naast de vijf verplichte artikelen vier aanvullende wetenschappelijke bronnen gekozen (twee conferentiebijdragen van de International Marine Design Conference 2024 en twee tijdschriftartikelen), met als expliciet criterium dat zij ofwel direct over een Handymax- of vergelijkbare bulkcarrier gaan, ofwel een concreet scheepsontwerp met alternatieve brandstof uitwerken in plaats van uitsluitend brandstofeigenschappen op moleculair niveau te bespreken. Dit sluit aan bij het doel van dit rapport om niet alleen brandstoftechnologie te beschrijven, maar specifiek de ontwerpconsequenties ervan te doorgronden.
 
-\section{DECLARATION OF GENERATIVE AI AND AI-ASSISTED TECHNOLOGIES IN WRTITING}
-
-The AI Statement available on Brightspace goes here.
+Dit rapport heeft drie doelen, die overeenkomen met de opdrachtomschrijving: (1) de huidige literatuur over de invloed van alternatieve brandstoffen op het ontwerp van bulkcarriers evalueren; (2) een onderbouwde down-selectie van relevante alternatieve brandstoffen maken voor de gegeven casus; en (3) beschrijven hoe de brandstofkeuze het ontwerp van het schip beïnvloedt. De rest van dit rapport is als volgt opgebouwd: eerst wordt het traditionele scheepsontwerpproces tegenover de energietransitie geplaatst; vervolgens worden kandidaat-brandstoffen geïnventariseerd en down-geselecteerd; daarna wordt de invloed van deze brandstoffen op het scheepsontwerp besproken; gevolgd door milieu- en operationele overwegingen; en ten slotte volgen discussie en conclusie.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Het traditionele scheepsontwerpproces en de energietransitie}
 
+Het traditionele scheepsontwerpproces wordt doorgaans beschreven als een iteratief proces --- vaak gevisualiseerd als een `ontwerpspiraal' --- waarin eisen (ladingcapaciteit, snelheid, actieradius) stapsgewijs worden vertaald naar hoofdafmetingen, vorm, stabiliteit en voortstuwing, met herhaalde terugkoppeling tussen deze stappen totdat een consistent ontwerp ontstaat \citep{papanikolaou2026}. Kenmerkend voor deze methodologie is dat de eerste iteratie start vanuit een vaste `mission requirement' --- voor een bulkcarrier doorgaans ladingcapaciteit (DWT), route en snelheid --- waarna hoofdafmetingen, rompvorm en voortstuwingsvermogen daaromheen worden geoptimaliseerd. Voortstuwing en brandstofsoort worden in deze klassieke volgorde relatief laat in het proces bepaald, als afgeleide van het reeds vastgelegde vermogensbehoefte, in plaats van als sturende ontwerpvariabele.
+
+Voor conventionele bulkcarriers is dit proces sterk geoptimaliseerd rond het maximaliseren van ladingcapaciteit tegen de laagst mogelijke bouwkosten \citep{lindstad2022}, met voortstuwing op stookolie als grotendeels vaststaande, weinig bediscussieerde variabele. Deze aanname is decennialang houdbaar gebleken zolang brandstofprijs en beschikbaarheid stabiel waren en er geen aanvullende eisen aan tankvolume, veiligheidszones of bunkerinfrastructuur werden gesteld die wezenlijk afweken van die van HFO.
+
+\citet{mckenney2024} laat zien dat de energietransitie precies deze aanname ondermijnt: de toenemende complexiteit en veelheid aan technische oplossingen (LNG, methanol, ammoniak, waterstof, batterij-hybride systemen, windondersteuning), gecombineerd met dynamische regelgeving, geopolitieke en marktonzekerheden, vereist een holistische ontwerpbenadering die rekening houdt met levenscyclus- en vlootniveau-implicaties, in plaats van het klassieke lineaire ontwerpproces waarin brandstofkeuze een gegeven is. Besluitvorming onder onzekerheid --- welke brandstof over de levensduur van het schip (doorgaans 20--25 jaar) daadwerkelijk beschikbaar, betaalbaar en regelgevingsconform blijft --- wordt daarmee zelf onderdeel van het ontwerpprobleem.
+
+Dit wordt in de praktijk bevestigd door \citet{dahlkewallat2024}, die concluderen dat zelfs voor een conventioneel scheepstype (een klein bunkerschip) het klassieke ontwerpproces --- dat leunt op ervaring met vergelijkbare bestaande prototypeschepen --- niet zonder meer toepasbaar is zodra de energietransitie een rol speelt, omdat er simpelweg geen omvangrijke vloot referentieschepen op de nieuwe brandstof bestaat. Zij pleiten voor een hybride aanpak waarin traditionele ontwerpmethodologie, geavanceerde CAD-tools en gericht experimenteel onderzoek (bijvoorbeeld naar materiaalcompatibiliteit en veiligheidsafstanden) worden gecombineerd, in plaats van te vertrouwen op ervaringsregels die voor stookolieschepen zijn opgebouwd.
+
+Voor de Handymax-casus in dit rapport betekent dit dat de klassieke, op ladingcapaciteit gerichte ontwerplogica (rubriekcriterium c) niet zonder meer als uitgangspunt kan worden genomen: brandstofkeuze moet vanaf het begin worden meegenomen als sturende ontwerpvariabele, niet als nabeschouwing achteraf. Dit rechtvaardigt tegelijk waarom een literatuurgebaseerde down-selectie --- zoals in de volgende sectie wordt uitgevoerd --- een noodzakelijke eerste stap is v\'o\'ordat er in Deel 2 van deze opdracht daadwerkelijk kwantitatief ontworpen kan worden: zonder eerst de kandidaat-brandstoffen te beperken tot een haalbare set, zou de ontwerpspiraal van \citet{papanikolaou2026} voor elke mogelijke brandstof opnieuw doorlopen moeten worden, wat binnen de scope van deze opdracht niet haalbaar is.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Overzicht en down-selectie van alternatieve brandstoffen}
+
+\citet{vidovic2023} geven een systematisch overzicht van beschikbare technologieën in de groene maritieme sector, onderverdeeld in vijf gebieden: alternatieve brandstoffen, hybride voortstuwing en waterstoftechnologieën, digitalisering, rompweerstandsreductie en koolstofafvang. Zij benadrukken dat de technology readiness level (TRL) sterk verschilt per brandstof en dat een geleidelijke overgang via `betere transitionele oplossingen' economisch realistischer is dan een directe stap naar radicaal andere brandstoffen. \citet{tadros2023} bevestigen dit beeld in hun review van regelgeving en technologieën over de periode 2010--2022, waarin schone brandstoffen \'e\'en van vijf hoofdthema's vormen, naast rompontwerp, voortstuwingssystemen, energiesystemen en scheepsoperaties.
+
+Voor de gegeven casus --- uitgesloten kernenergie en metaalpoeders, een reisduur van 12--15 dagen en een route die deels binnen de EU valt --- worden in dit rapport LNG, methanol, ammoniak en waterstof als kandidaten beschouwd (rubriekcriterium a). Zuivere waterstof wordt op basis van de literatuur afgevallen als hoofdbrandstof: de lage volumetrische energiedichtheid van waterstof wordt door \citet{vidovic2023} genoemd als belangrijkste TRL-knelpunt voor toepassing op schaal, en zelfs voor waterstofdrager-brandstoffen zoals ammoniak op een aanzienlijk kleiner containerschip vinden \citet{dimicco2024} al een significant ladingcapaciteitsverlies (zie volgende sectie) --- op een Handymax met een reisduur van 12--15 dagen zou dit verlies naar verwachting nog groter zijn.
+
+LNG blijft in de literatuur de best onderbouwde kortetermijnoptie: \citet{akman2024} tonen in een conceptueel ontwerp van een Handymax bulkcarrier (178 m, 35.000 DWT) dat een LNG-dual-fuel-systeem de Energy Efficiency Design Index (EEDI) met 17,1\% verlaagt ten opzichte van diesel en met 13,6\% ten opzichte van methanol. \citet{charvalos2025} bevestigen dit op vlootniveau: van vier onderzochte brandstoffen (LNG, LPG-B, LPG-P, methanol) presteert LNG het best op zowel milieucompliance als kosten, met tot 24\% lagere EU ETS-kosten, terwijl methanol de minste verbetering laat zien ondanks een forse stijging van de brandstofkosten (29,9--107\%).
+
+Ammoniak is het meest onderzochte zero-carbon alternatief in de context van scheepsontwerp: \citet{dimicco2024} werken een concreet ontwerp uit van ammoniak-gebaseerde brandstofcelsystemen (PEMFC en SOFC) en \citet{dahlkewallat2024} ontwerpen een specifiek ammoniak-bunkerschip, wat aangeeft dat de benodigde scheeps- en infrastructuurkennis voor ammoniak sneller volwassen wordt dan voor waterstof als directe brandstof. Beide bronnen wijzen echter ook op de keerzijde: ammoniak is toxisch en vereist aanvullende veiligheidsmaatregelen, en de volumetrische energiedichtheid is weliswaar hoger dan die van vloeibare waterstof maar nog altijd aanzienlijk lager dan die van LNG of HFO, wat direct doorwerkt in de benodigde tankomvang (zie volgende sectie).
+
+Biobrandstoffen worden in de geraadpleegde bronnen slechts zijdelings genoemd \citep{vidovic2023} en niet specifiek voor bulkcarriers op deze schaal onderzocht; gezien de beperkte literatuuronderbouwing binnen de negen geraadpleegde bronnen worden zij in dit rapport niet als volwaardige kandidaat meegenomen, maar wel genoemd als mogelijke `drop-in'-optie die in Deel 2 nader onderzocht zou kunnen worden indien tijd dit toelaat. Een ander praktisch punt van overweging is bunkerinfrastructuur: Rotterdam ontwikkelt zich als een van de eerste Europese havens met zowel LNG- als (in opkomst) ammoniak-bunkerfaciliteiten, terwijl de beschikbaarheid van deze infrastructuur in Baltimore, aan de andere kant van de gekozen route, minder goed gedocumenteerd is binnen de geraadpleegde bronnen. Dit asymmetrische beeld van bunkerbeschikbaarheid is een operationele randvoorwaarde die, hoewel buiten de kern van de geraadpleegde technische literatuur, wel meegewogen moet worden bij een definitieve brandstofkeuze en die in Deel 2 verder empirisch onderzocht zou moeten worden.
+
+Op basis van deze afweging wordt in dit rapport voorgesteld om voor de Handymax-casus LNG als kortetermijn-overgangsbrandstof en ammoniak als langetermijn zero-carbon kandidaat verder uit te werken, met methanol als secundaire vergelijkingsoptie gezien de wisselende resultaten in de literatuur en waterstof en biobrandstoffen als bewust buiten scope gehouden opties voor dit rapport.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Invloed van brandstofkeuze op het scheepsontwerp}
+
+De belangrijkste ontwerpimpact van beide voorgestelde brandstoffen is de benodigde tankruimte (rubriekcriterium b). \citet{akman2024} laten zien dat de integratie van een LNG-dual-fuel-systeem in een Handymax-romp direct gevolgen heeft voor de indeling van het schip, door de grotere en thermisch geïsoleerde tanks die cryogene opslag vereist ten opzichte van conventionele stookolietanks.
+
+Voor ammoniak is dit effect kwantitatief onderbouwd door \citet{dimicco2024}: de grotere massa's en volumes van ammoniak-brandstoftanks en brandstofcelsystemen ten opzichte van een conventioneel dieselsysteem resulteren, ook op het door hen onderzochte (kleinere) containerschip, in een geschat ladingcapaciteitsverlies van 3,3--4,8\%. Toegepast op de bandbreedte van de Handymax-casus (35.000--50.000 DWT) zou dit --- als eerste, voorzichtige indicatie op basis van deze literatuurwaarde, en niet als resultaat van eigen berekening --- kunnen neerkomen op ruwweg 1.150 tot 2.400 DWT aan verloren laadvermogen, wat direct de vrachtinkomsten raakt op een schip dat oorspronkelijk is ontworpen om ladingcapaciteit te maximaliseren.
+
+Naast tankvolume spelen veiligheids- en indelingseisen een rol: \citet{dahlkewallat2024} benadrukken dat voor een ammoniak-schip geen `klassiek' ontwerptraject op basis van bestaande prototypes kan worden gevolgd, mede door de toxiciteit van ammoniak, wat aanvullende eisen stelt aan ventilatie, afstand tot bemanningsverblijven en bunkervoorzieningen. Dit type indelingseisen bestond niet, of in veel mindere mate, in het traditionele, op stookolie gebaseerde ontwerpproces dat in de vorige sectie is besproken, en onderstreept dat de spanning tussen ladingcapaciteit en brandstofsysteem niet louter een kwestie van beschikbare ruimte is, maar ook van fundamenteel andere veiligheidsrandvoorwaarden.
+
+Voor LNG geldt een vergelijkbaar, zij het minder extreem, patroon: cryogene opslag bij circa $-162^\circ$C vereist dubbelwandige, geïsoleerde tanks die doorgaans niet dezelfde vormvrijheid hebben als conventionele brandstoftanks en dus minder efficiënt in de beschikbare scheepsromp kunnen worden ingepast \citep{akman2024}. Dit heeft ook gevolgen voor de rest van het ontwerp: extra structurele versteviging rond de tanks, ruimte voor boil-off-gasbehandeling, en --- afhankelijk van tankplaatsing --- mogelijk een verschuiving van het zwaartepunt die opnieuw stabiliteitsberekeningen vereist. Dit type secundaire effecten wordt door \citet{akman2024} benoemd als reden waarom een dual-fuel-Handymax niet simpelweg kan worden afgeleid van een bestaand dieselontwerp door de tanks te vervangen, maar een herhaalde doorloop van de ontwerpspiraal \citep{papanikolaou2026} vereist.
+
+Een laatste, voor deze casus specifiek relevant punt is de relatie tussen tankvolume en actieradius. De gegeven route (Rotterdam--Baltimore, 4340 nm, 12--15 dagen) legt een minimumeis vast aan de hoeveelheid energie die aan boord moet kunnen worden meegenomen zonder tussentijds te bunkeren, tenzij het operationele profiel wordt aangepast. Omdat zowel LNG als ammoniak een lagere volumetrische energiedichtheid hebben dan HFO, ontstaat een directe afweging tussen (a) grotere tanks en dus meer capaciteitsverlies, of (b) vaker bunkeren, wat gezien de nog beperkte en ongelijk verdeelde bunkerinfrastructuur (zie vorige sectie) operationeel risicovol is. Deze afweging wordt in de geraadpleegde literatuur niet expliciet voor de Rotterdam--Baltimore-route doorgerekend en vormt daarmee een concreet aanknopingspunt voor de kwantitatieve uitwerking in Deel 2 van deze opdracht.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Milieu- en operationele overwegingen}
+
+Naast brandstofkeuze zelf laat de literatuur zien dat ook zuiver ontwerpkundige ingrepen een grote milieu-impact kunnen hebben (rubriekcriterium d). \citet{lindstad2022} tonen aan dat een slankere rompvorm gecombineerd met windondersteunde voortstuwing de brandstofconsumptie en broeikasgasemissies van bulkschepen met circa 25\% kan verminderen tegen negatieve of nul-kosten, en dat de combinatie van een slankere romp, windondersteuning \'en zero-carbon brandstof een reductie van 100\% mogelijk maakt tegen 328 USD per ton CO$_2$, aanzienlijk lager dan de 459 USD per ton CO$_2$ bij het gebruik van uitsluitend zero-carbon brandstof zonder aanvullende ontwerpmaatregelen. Dit onderstreept dat brandstofkeuze en scheepsontwerp niet los van elkaar beoordeeld moeten worden.
+
+\citet{charvalos2025} laten daarnaast zien dat milieucompliance en economische haalbaarheid niet automatisch samenvallen: LNG scoort het best op beide vlakken, terwijl methanol weliswaar een schonere brandstof is maar in hun vlootanalyse de minste verbetering in compliance-periode laat zien tegen de hoogste kostenstijging. Voor de Rotterdam--Baltimore-route, die deels binnen de EU begint, is dit direct relevant: het EU Emissions Trading System (EU ETS) en de Carbon Intensity Indicator (CII) functioneren in de praktijk als aanvullende ontwerprandvoorwaarden naast de puur technische brandstofeigenschappen, zoals ook \citet{tadros2023} concluderen in hun bredere regelgevingsreview.
+
+Deze bevindingen versterken de down-selectie uit de vorige sectie: LNG is op de korte termijn zowel technisch als economisch de meest verdedigbare keuze, terwijl ammoniak vooral aantrekkelijk is vanuit het perspectief van langetermijn regelgeving (netto-nul 2050), ondanks de grotere ontwerp- en kostenimpact op korte termijn.
+
+Een belangrijke nuance die meerdere bronnen \citep{tadros2023,vidovic2023} impliciet maken, is het onderscheid tussen `tank-to-wake'-emissies (wat er letterlijk uit de schoorsteen van het schip komt) en `well-to-wake'-emissies (de volledige levenscyclus, inclusief productie van de brandstof zelf). LNG scoort relatief goed op tank-to-wake-basis, maar de well-to-wake-winst hangt sterk af van methaanlekkage tijdens productie en transport. Voor ammoniak geldt vergelijkbaar dat de milieuwinst volledig afhangt van of de ammoniak `groen' (met hernieuwbare energie) of `blauw'/`grijs' (met aardgas, al dan niet met koolstofafvang) wordt geproduceerd. Dit is relevant voor de EU ETS- en CII-beoordeling in de vorige alinea: alleen daadwerkelijk groene brandstof levert op de lange termijn de regelgevingsvoordelen op die in dit rapport aan ammoniak worden toegeschreven, wat een aanvullende onzekerheid vormt die in Deel 2 aandacht verdient.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Discussie en conclusie}
+
+Dit rapport onderzocht de vraag wat de invloed is van laag- of zero-emissiealternatieve brandstoffen op het ontwerp van een Handymax bulkcarrier. Uit de literatuur blijkt dat deze invloed zich op ten minste vier manieren manifesteert: (1) de benodigde brandstoftankvolumes concurreren direct met ladingcapaciteit, met een geschat verlies van enkele procenten DWT voor ammoniak-gebaseerde systemen; (2) nieuwe veiligheids- en indelingseisen (ventilatie, afstand tot verblijven, bunkerinfrastructuur) ontstaan die in het traditionele ontwerpproces niet bestonden; (3) de ontwerpprioriteit verschuift van pure ladingcapaciteitsoptimalisatie naar een geïntegreerde afweging van brandstofsysteem, rompvorm en operationeel profiel, zoals blijkt uit het effect van rompslankheid en windondersteuning naast brandstofkeuze; en (4) regelgevende en economische factoren (EU ETS, CII) bepalen mede welke technisch haalbare brandstof daadwerkelijk levensvatbaar is.
+
+Op basis van deze literatuur wordt voor de gegeven casus voorgesteld om LNG als kortetermijn-overgangsbrandstof en ammoniak als langetermijn zero-carbon kandidaat verder te onderzoeken in Deel 2 van deze opdracht, met methanol als secundaire referentie.
+
+Dit literatuuronderzoek kent beperkingen. Van de negen geraadpleegde bronnen kon van vijf de volledige tekst worden geraadpleegd (\citealp{charvalos2025}; \citealp{dimicco2024}; \citealp{lindstad2022}; \citealp{mckenney2024}; \citealp{tadros2023}; \citealp{vidovic2023} --- via samenvattingen en/of open-access volledige tekst); voor \citet{akman2024} was tijdens het opstellen van dit concept alleen de samenvatting via de uitgeverspagina beschikbaar, niet de volledige tekst via de TU Delft Bibliotheek, en voor \citet{papanikolaou2026} is uitsluitend algemene kennis over het traditionele ontwerpproces gebruikt zonder de specifieke pagina's 20--42 zelf te hebben kunnen raadplegen. Het team wordt aangeraden deze bronnen voor de definitieve versie via de TU Delft Bibliotheek volledig te raadplegen en de kwantitatieve claims (met name de EEDI-percentages van \citet{akman2024} en de DWT-schatting in de vorige sectie) te verifi\"eren en zo nodig aan te vullen met eigen berekeningen, zoals ook past bij Deel 2 van de SDRA.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Verklaring over gebruik van generatieve AI}
+
+Voor dit rapport voor het vak MT2462 Ship Design (SDRA Deel 1) hebben wij Generative AI gebruikt om:
+
+\begin{itemize}
+    \item Delen van de tekst van dit verslag te cre\"eren op basis van door ons aangeleverde brongegevens en een gekozen artikellijst; deze onderdelen zijn hierboven met referenties onderbouwd.
+    \item Inspiratie op te doen voor de structuur en indeling van het rapport (koppen, volgorde van secties gekoppeld aan de beoordelingsrubriek).
+    \item Te assisteren bij het zoeken en verzamelen van kandidaat-literatuur (samenvattingen en metadata via Crossref/OpenAlex/Semantic Scholar) voorafgaand aan eigen beoordeling door het team.
+\end{itemize}
+
+Wij hebben het werk nagekeken en blijven zelf volledig verantwoordelijk voor de inhoud van dit rapport. \textit{[DRAFT --- dit is een eerlijke, voorlopige verklaring; pas aan op basis van wat jullie na review daadwerkelijk hebben overgenomen, herschreven of zelf hebben aangevuld voordat dit wordt ingeleverd.]}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Word Count}
 
-The word count of this report is [\textit{fill in word count}]
+Het aantal woorden van de hoofdtekst (Introductie t/m Discussie en Conclusie, exclusief titel, auteurs, abstract, referenties en AI-verklaring) is 2567.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \bibliography{references}
 
-References to original (not secondary) sources for cited material are to be listed together at the end of the paper and should be justified ragged right.  References should be published materials (excluding computer program manuals) accessible to the public that are relevant to the paper discussions.  References is NOT a bibliography; every reference included should be cited within the text.  Internal technical reports may be cited only if they are easily accessible to the public or any reader.
-
-Within the text, identify references using APA style according to the style guide: \href{https://www.mendeley.com/guides/apa-citation-guide/}{APA Format Citation Guide}.
-
-\cite{mitchell2017}
-Mitchell, J.A. (2017). Citation: Why is it so important. Mendeley Journal, 67(2), 81-95 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Appendixes}
 
-In general, appendices are not needed for the SDRA. In a highly mathematical paper it is advisable to develop equations and formulas in an appendix.  Appendixes also may be used for detailed descriptions of apparatus and other related material not essential to general presentation of subject. Appendices shall be lettered A, B, etc. 
+Niet van toepassing voor dit rapport.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \end{document}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%% LOOKING FORWARD TO MEETING YOU AT IMDC2024 %%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

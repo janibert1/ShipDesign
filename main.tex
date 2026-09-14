@@ -1,0 +1,110 @@
+\documentclass[a4paper]{IMDC2024}
+
+%%% Required Packages %%%
+\usepackage{graphicx}
+\usepackage[right = 50pt, left = 50pt, top = 30pt, bottom = 135pt, includehead, nomarginpar]{geometry}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{float}
+\usepackage[labelfont = bf]{caption}
+\usepackage{hyperref}
+\usepackage{natbib}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot{}
+\pagenumbering{Arabic}
+%%% Header and Footer %%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%% Title, Authors, Abstract %%%
+
+
+
+\vspace*{2pt}
+
+{\fontspec{Arial}\fontsize{18}{21}\bfseries Paper Title}
+\vspace{20pt}
+
+\textbf{\fontsize{12}{14}\selectfont Author’s Name\textsuperscript{1,*} and Author’s Name\textsuperscript{2}}
+
+\vspace{30pt}
+\begin{center}
+    
+    {\fontspec{Arial}\fontsize{12}{14}\selectfont {\textit{\textbf{ABSTRACT}}}}
+        
+    \begin{flushleft}
+            
+        \begin{spacing}{1.0} 
+            \fontsize{10}{12}\selectfont
+            \setlength{\parindent}{0.63cm} % 1.27 cm / 2
+            \setlength{\leftskip}{1.27cm}
+            \setlength{\rightskip}{1.27cm}
+    
+            \textit{A short abstract (100-150 words) in a single paragraph should be included here. In this sample paper, we describe and provide the formatting guidelines for submissions to the MT2462 Ship Design Research Assignment (SDRA). Simply insert your information where applicable.}
+        \end{spacing}
+    \end{flushleft}
+
+\end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setfulljustify
+\section{KEY WORDS}
+
+List up to 5 key words. Example: Design; LNG; Arctic; Safety. 
+
+\section{NOMENCLATURE}
+
+Optional, but do not use unless it is absolutely necessary. If used, place in alphabetical order, followed by Greek symbols. 
+
+%%% Main Text %%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Introduction}
+
+The body of the paper begins with the Introduction. In the Introduction, state the purpose of the paper, or author’s aim, so that the reader will have a clear concept of the objective(s).  Following the Introduction, text should be organized into logical parts or sections that reflect the instructions for the SDRA. 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% Uncomment to check the formatting guidelines:
+\input{Formatting}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{DECLARATION OF GENERATIVE AI AND AI-ASSISTED TECHNOLOGIES IN WRTITING}
+
+The AI Statement available on Brightspace goes here.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Word Count}
+
+The word count of this report is [\textit{fill in word count}]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\bibliography{references}
+
+References to original (not secondary) sources for cited material are to be listed together at the end of the paper and should be justified ragged right.  References should be published materials (excluding computer program manuals) accessible to the public that are relevant to the paper discussions.  References is NOT a bibliography; every reference included should be cited within the text.  Internal technical reports may be cited only if they are easily accessible to the public or any reader.
+
+Within the text, identify references using APA style according to the style guide: \href{https://www.mendeley.com/guides/apa-citation-guide/}{APA Format Citation Guide}.
+
+\cite{mitchell2017}
+Mitchell, J.A. (2017). Citation: Why is it so important. Mendeley Journal, 67(2), 81-95 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Appendixes}
+
+In general, appendices are not needed for the SDRA. In a highly mathematical paper it is advisable to develop equations and formulas in an appendix.  Appendixes also may be used for detailed descriptions of apparatus and other related material not essential to general presentation of subject. Appendices shall be lettered A, B, etc. 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% LOOKING FORWARD TO MEETING YOU AT IMDC2024 %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

@@ -9,6 +9,8 @@
 \usepackage[labelfont = bf]{caption}
 \usepackage{hyperref}
 \usepackage{natbib}
+\usepackage{threeparttable}
+\usepackage{amsmath}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -27,14 +29,47 @@
 {\fontspec{Arial}\fontsize{18}{21}\bfseries De Invloed van Laag- en Zero-Emissiebrandstoffen op het Ontwerp van een Handymax Bulkcarrier}
 \vspace{20pt}
 
-\textbf{\fontsize{12}{14}\selectfont J.A. Driessen\textsuperscript{1,*} and J. Aarnink\textsuperscript{2}}
+\textbf{\fontsize{12}{14}\selectfont J.A. Driessen\textsuperscript{1,*} and J. Aarnink\textsuperscript{2}} \\[4pt]
+{\small \textit{[6478018]}}
 
-\vspace{24pt}
+\section{AI-verklaring}
+In dit artikel is gebruik gemaakt van generatieve AI voor de volgende onderdelen:\\
+\begin{itemize}
+    \item Het ordenen van bronnen en het ondersteunen in het snel terugzoeken van informatie in bronnen
+    \item Ondersteunen en inspiratie opdoen voor de opmaak en inhoud van tabellen en figuren.
+    \item Spellingscontrole en zinsopbouw verbeteren voor betere leesbaarheid.
+\end{itemize}
+Wij hebben het werk nagekeken en blijven zelf volledig verantwoordelijk voor de inhoud van dit rapport.
+\vspace{30pt}
+\begin{center}
+
+    {\fontspec{Arial}\fontsize{12}{14}\selectfont {\textit{\textbf{ABSTRACT}}}}
+
+    \begin{flushleft}
+
+        \begin{spacing}{1.0}
+            \fontsize{10}{12}\selectfont
+            \setlength{\parindent}{0.63cm}
+            \setlength{\leftskip}{1.27cm}
+            \setlength{\rightskip}{1.27cm}
+
+            De verschuiving naar laag- en zero-emissiebrandstoffen dwingt ontwerpers van bulkcarriers om af te stappen van het traditionele, op ladingcapaciteit gerichte ontwerpproces. Dit literatuuronderzoek onderzoekt de vraag: wat is de invloed van laag- of zero-emissiealternatieve brandstoffen op het ontwerp van een Handymax bulkcarrier? Aan de hand van een literatuuronderzoek van wetenschappelijke artikelen word het traditionele scheepsontwerpproces tegenover de energietransitie geplaatst, waarna een gemotiveerde down-selectie van kandidaat-brandstoffen wordt gemaakt voor de gegeven casus (Handymax, Rotterdam--Baltimore, 12--15 kn). Vervolgens wordt de invloed van deze brandstoffen op tankvolume, laadvermogen, indeling en veiligheid besproken, gevolgd door de milieu- en operationele/regelgevende overwegingen (o.a. EU ETS). De literatuur wijst LNG aan als de best onderbouwde overgangsbrandstof op korte termijn en ammoniak als het meest onderzochte zero-carbon alternatief op langere termijn, beide ten koste van laadvermogen en met nieuwe indelings- en veiligheidseisen.
+        \end{spacing}
+    \end{flushleft}
+
+\end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
 \setfulljustify
+\section{KEY WORDS}
+
+Alternatieve brandstoffen; Scheepsontwerp; Handymax bulkcarrier; Ammoniak; LNG
 
 %%% Main Text %%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+
 \section{Inleiding}
 
 Duurzaamheid en emissiereductie vormen momenteel de meest urgente opgaven binnen de maritieme sector. Deze urgentie wordt gedreven door de wereldwijde klimaatcrisis en de aangescherpte regulering vanuit de Internationale Maritieme Organisatie (IMO). Tijdens de zitting van het Marine Environment Protection Committee (MEPC) in juli 2023 is vastgelegd dat de sector in of rond 2050 moet toewerken naar een netto nul-uitstoot van broeikasgassen \citep{tadros2023}. Hoewel de scheepvaart netto beschouwd wordt als een van de meest efficiënte transportmodi, vertegenwoordigt de sector door haar enorme schaal circa 3\% van de wereldwijde antropogene uitstoot \citep{imo2020}. Binnen de wereldvloot zijn drie segmenten, te weten bulkcarriers, tankers en containerschepen, verantwoordelijk voor grofweg twee derde van deze totale emissies.
@@ -54,18 +89,8 @@ Binnen de context van een moderne Handymax (35.000--50.000~DWT) op een vaste tra
 \end{enumerate}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Systeemcomplexiteit}
-\label{sec:systeemcomplexiteit}
-
-\subsection{Toegenomen complexiteit}
-GHG brandstof regulatie zal naar verwachting per 2027 internationaal geregeld zijn \cite{mckenney2024}, het doel hiervan is het promoten van alternatieve, minder schadelijke brandstoffen. Omdat de regeling in 2027 wordt verwacht zullen schepen met een later bouwjaar hun aandrijving zo ontwerpen dat deze op alternatieve brandstoffen kunnen lopen, of gemakkelijk zijn om te bouwen naar een dergelijke aandrijving. Echter brengt een dergelijke aandrijving extra complexiteit met zich mee, zo zijn de meest gangbare alternatieven nog altijd lastiger op te slaan door een lage dichtheid, of zijn deze lang niet zo energiedicht als conventionele dieselolie \cite{vanhoecke2021challenges}. Hierdoor gaat dit ten koste van de laadruimte of laadcapaciteit van een schip, daarnaast moeten brandstoffen met een lage dichtheid vaak onder hoge druk in ronde tanks worden opgeslagen waardoor het moeilijk is om de beschikbare ruimte efficiënt in te delen.
-
-\subsection{Veiligheid}
-Omdat alternatieve brandstoffen vaak geen eerste keus zijn geweest brengen ze allemaal een groot nadeel met zich mee, zo zijn ammoniak en methanol zeer giftig en kunnen dus bij een lek erg schadelijk zijn voor mens en milieu. Ook waterstof vereist veel veiligheidsoverwegingen, zo moet het bij een extreem lage temperatuur van -253 graden celsius gehouden worden, en staat het onder een extreem hoge druk en is waterstof erg licht ontvlambaar \cite{vanhoecke2021challenges}. Deze verschillende eigenschappen zorgen voor grote veiligheidsrisico's die veel complexe problemen met zich mee brengen, deze risico's maken het installeren, onderhouden en recyclen van een schip erg complex.
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
 \section{Ontwerpmethodiek}
-\label{sec:ontwerpmethodiek}
 
 \subsection{Verschuiving in methodologie}
 Als we in de historie kijken naar de ontwerpmethodologie voor vrachtschepen wordt deze vooral gezien als een eenvoudig transportmiddel. Vanwege deze gedachte worden tot op heden de meeste vrachtschepen ontworpen met een eenvoudige ontwerpspiraal, waarbij veel ontwerpfases een vaste voorkeursontwerp hebben, zoals dat bijvoorbeeld een dieselmotor vaak de standaard keuze was voor de aandrijving \cite{mckenney2024}. Vanwege deze eenvoudige ontwerpmethodiek die voornamelijk gericht is op het zo eenvoudig en goedkoop mogelijk maken van een vrachtschip, is het moeilijk om complexe vraagstukken zoals alternatieve brandstoffen, autonome schepen of technologie-opties op te lossen. Volgens \cite{tadros2023} moet daarom de ontwerpmethodologie veranderd worden van een eenvoudige ontwerpcirkel naar een methodologie die zich focust op het tegelijkertijd optimaliseren van de hydrodynamica, rompvorm en machinekamerintegratie. Daarnaast benadrukt \cite{lindstad2022} dat 'full-body' rompen moeten wijken ten gunste van slankere rompvormen in combinatie met windondersteuning. 
@@ -73,13 +98,11 @@ Als we in de historie kijken naar de ontwerpmethodologie voor vrachtschepen word
 \subsection{Prioriteit}
 Omdat de meeste innovatie relatief nieuw is, en vaak nog onbewezen in de praktijk, zijn veel scheepswerven terughoudend in het investeren in een nieuwe vloot. Dit heeft vooral te maken met het financiële risico dat gekoppeld is aan 'de eerste zijn' \cite{AbhilashaFullonton}. Tot op heden is er dan ook nog geen alternatieve brandstof gevonden met dezelfde kwaliteiten als dieselolie, maar met een lagere of beter behandelbare uitstoot. Daarom is het belangrijk om prioriteiten te stellen en als gehele sector toe te bewegen naar één enkele alternatieve brandstof.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
 \section{Randvoorwaarden en Onzekerheden bij Alternatieve Brandstoffen}
 \label{sec:randvoorwaarden_onzekerheden}
 
-% ==============================================================================
-% DEEL J.A. DRIESSEN: 613 woorden voor Assignment D
-% ==============================================================================
+
 
 Het succesvol implementeren van een alternatieve brandstof op een Handymax bulkcarrier wordt in de eerste plaats begrensd door externe randvoorwaarden, waarvan de fysieke bunkerinfrastructuur de meest doorslaggevende is \citep{mckenney2024}. Scheepsontwerpers worden geconfronteerd met een klassiek kip-en-ei-probleem: reders investeren pas in schepen met alternatieve aandrijving wanneer bunkerfaciliteiten gegarandeerd zijn, terwijl havenautoriteiten wachten op een substantieel scheepsvolume \citep{vidovic2023}. Voor de onderzochte casus is de geografische asymmetrie tussen de havens cruciaal. De haven van Rotterdam fungeert als koploper in Europa met operationele LNG-bunkering en concrete projecten voor de overslag en bunkering van ammoniak en methanol, mede ondersteund door gespecialiseerde bunkervaartuigen \citep{dahlkewallat2024}. De haven van Baltimore en de Amerikaanse oostkust beschikken daarentegen vooralsnog nauwelijks over commerciële bunkerinfrastructuur voor zero-emissiebrandstoffen gericht op deep-sea bulkvaart. Deze infrastructurele randvoorwaarde dwingt het scheepsontwerp tot een ingrijpende keuze: óf het schip moet voldoende brandstof bunkeren in Rotterdam voor een volledige retourreis (8.680 zeemijl), óf men blijft afhankelijk van dual-fuel configuraties met conventionele stookolie als terugvaloptie \citep{akman2024}. Gezien de lage volumetrische energiedichtheid van ammoniak of methanol ten opzichte van stookolie leidt een retourbunkeringsvereiste tot een disproportioneel groot tankvolume, wat direct ten koste gaat van het laadvermogen (DWT) en daarmee het verdienmodel van het schip ondermijnt \citep{dimicco2024}.
 
@@ -89,7 +112,116 @@ Tot slot introduceren geopolitieke spanningen, gewapende conflicten en marktstru
 
 Deze combinatie van infrastructurele tekortkomingen en meerlagige onzekerheden toont aan dat het traditionele ontwerpproces, waarin brandstofkeuze een vaste aanname was \citep{papanikolaou2026}, ontoereikend is voor de hedendaagse bulkvaart. Een Handymax voor de trans-Atlantische route kan niet langer uitsluitend worden geoptimaliseerd voor maximale ladingcapaciteit bij een vast vlampunt en brandstofvolume. In plaats daarvan dwingen deze randvoorwaarden ontwerpers tot het inbouwen van modulaire flexibiliteit, zoals ammonia-ready of methanol-ready rompen met gereserveerde ruimtes en structurele aanpassingen, om het schip over zijn operationele levensduur veerkrachtig te houden tegen veranderende brandstofprijzen, geopolitieke handelsbeperkingen en aanscherpende milieuregelgeving \citep{lindstad2022,mckenney2024}.
 
+\newpage
+
+\section{Systeemcomplexiteit}
+\label{sec:systeemcomplexiteit}
+
+\subsection{Toegenomen complexiteit}
+GHG brandstof regulatie zal naar verwachting per 2027 internationaal geregeld zijn \cite{mckenney2024}, het doel hiervan is het promoten van alternatieve, minder schadelijke brandstoffen. Omdat de regeling in 2027 wordt verwacht zullen schepen met een later bouwjaar hun aandrijving zo ontwerpen dat deze op alternatieve brandstoffen kunnen lopen, of gemakkelijk zijn om te bouwen naar een dergelijke aandrijving. Echter brengt een dergelijke aandrijving extra complexiteit met zich mee, zo zijn de meest gangbare alternatieven nog altijd lastiger op te slaan door een lage dichtheid, of zijn deze lang niet zo energiedicht als conventionele dieselolie \cite{vanhoecke2021challenges}. Hierdoor gaat dit ten koste van de laadruimte of laadcapaciteit van een schip, daarnaast moeten brandstoffen met een lage dichtheid vaak onder hoge druk in ronde tanks worden opgeslagen waardoor het moeilijk is om de beschikbare ruimte efficiënt in te delen.
+
+\subsection{Veiligheid}
+Omdat alternatieve brandstoffen vaak geen eerste keus zijn geweest brengen ze allemaal een groot nadeel met zich mee, zo zijn ammoniak en methanol zeer giftig en kunnen dus bij een lek erg schadelijk zijn voor mens en milieu. Ook waterstof vereist veel veiligheidsoverwegingen, zo moet het bij een extreem lage temperatuur van -253 graden celsius gehouden worden, en staat het onder een extreem hoge druk en is waterstof erg licht ontvlambaar \cite{vanhoecke2021challenges}. Deze verschillende eigenschappen zorgen voor grote veiligheidsrisico's die veel complexe problemen met zich mee brengen, deze risico's maken het installeren, onderhouden en recyclen van een schip erg complex.
+
+\subsection{Brandstof eigenschappen}
+
+\begin{table*}[t]
+\centering
+\small
+\begin{threeparttable}
+\caption{Vergelijkend overzicht van fysische, scheepsbouwkundige en veiligheidseigenschappen van alternatieve scheepsbrandstoffen voor een Handymax bulkcarrier.}
+\label{tab:fuel_comparison}
+\begin{tabular}{p{2.6cm} c c c p{2.4cm} c p{4.2cm}}
+\hline\hline
+\rule{0pt}{2.5ex}\textbf{Brandstof} & 
+\textbf{\begin{tabular}[c]{@{}c@{}}LHV\\ (MJ/kg)\end{tabular}} & 
+\textbf{\begin{tabular}[c]{@{}c@{}}Dichtheid\\ (kg/m$^3$)\end{tabular}} & 
+\textbf{\begin{tabular}[c]{@{}c@{}}Vol. LHV\\ (MJ/L)\end{tabular}} & 
+\textbf{\begin{tabular}[c]{@{}l@{}}Opslagconditie\\ ($T$, $p$)\end{tabular}} & 
+\textbf{\begin{tabular}[c]{@{}c@{}}Ruimtefactor\tnote{a}\\ ($V_{\text{tank}} / V_{\text{HFO}}$)\end{tabular}} & 
+\textbf{Primaire scheepsbouwkundige en veiligheidsaspecten} \\
+\hline
+\rule{0pt}{2.5ex}\textbf{HFO / VLSFO} (ref.) & 40.5 & 990 & 40.0 & Omgeving, 1 bar & 1.0$\times$ & Bunkering in dubbele bodem; conventioneel brandstofsysteem. \\[1ex]
+\textbf{LNG} & 49.0 & 450 & 22.0 & $-162\,^{\circ}\mathrm{C}$, 1--5 bar & $\sim$2.3--2.5$\times$ & Cryogene IMO Type C/B tanks; boil-off gas handling; methaanslip \citep{tadros2023}. \\[1ex]
+\textbf{Methanol} ($\text{CH}_3\text{OH}$) & 19.9 & 790 & 15.7 & Omgeving, 1 bar & $\sim$2.5$\times$ & Structurele tanks met speciale coating; laag vlampunt ($12\,^{\circ}\mathrm{C}$); toxisch bij inhalatie \citep{charvalos2025}. \\[1ex]
+\textbf{Ammoniak} ($\text{NH}_3$) & 18.6 & 680 & 12.7 & $-33\,^{\circ}\mathrm{C}$ of 10 bar & $\sim$3.5--4.2$\times$ & IMO Type A/C tanks; extreem toxisch (IDLH 300 ppm); cofferdams en scrubbers vereist \citep{dimicco2024}. \\[1ex]
+\textbf{Vloeibare $\text{H}_2$} ($\text{LH}_2$) & 120.0 & 71 & 8.5 & $-253\,^{\circ}\mathrm{C}$, 1--2 bar & $\sim$8.0--12.0$\times$ & Extreem cryogeen; zware vacu\"umisolatie; waterstofbrosheid; disproportioneel verlies laadruimte \citep{vanhoecke2021challenges}. \\[1ex]
+\hline\hline
+\end{tabular}
+\begin{tablenotes}
+    \footnotesize
+    \item \textit{Notities en bronvermelding:} Fysische eigenschappen en veiligheidskarakteristieken zijn samengesteld op basis van \citet{vanhoecke2021challenges}, \citet{vidovic2023} en \citet{charvalos2025}.
+    \item[a] De ruimtefactor representeert het werkelijk benodigde volume aan boord inclusief tankwanddikte, isolatie en onbenutte ruimtes (stowage factor), ontleend aan \citet{mckenney2024} en \citet{dimicco2024}.
+\end{tablenotes}
+\end{threeparttable}
+\end{table*}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\label{sec:ontwerpmethodiek}
+
+Om te bepalen welke alternatieve brandstof de beste vervanger is van de momenteel veel gebruikte HFO, is het belangrijk om verschillende eigenschappen van de brandstoffen in acht te nemen. Zoals te zien in Tabel~\ref{tab:fuel_comparison} merken we op dat $H_2$ een hoge Lower Heating Value heeft ten opzichte van de andere brandstoffen, echter is dit ook de enigste positieve eigenschap van waterstof zo heeft het een extreem lage dichtheid, moeilijk haalbare opslagconditie en neemt het veel ruimte in omdat het in ronde tanks opgeslagen moet worden. \\
+Als we vervolgens naar ammoniak kijken zien we in de tabel~\ref{tab:fuel_comparison}  dat het ongeveer de helft van de energie van HFO bevat, maar word dit weer gecompenseerd door een hogere dichtheid. Vanwege de condensatietemperatuur die dicht bij 0 ligt is opslaan van de ammoniak in vloeibare fase relatief eenvoudig, echter is ammoniak extreem toxisch voor mens en milieu waardoor een aangescherpt veiligheidsprotocol vereist is.  \\
+Methanol lijkt qua eigenschappen veel op Ammoniak, het heeft een iets hogere dichtheid waardoor kleinere tanks gebruikt kunnen worden, ook methanol is makkelijk op te slaan vanwege de hogere verdampingstemperatuur hierdoor is het bij atmosferische druk vloeibaar. Echter is methanol wel toxisch bij inhalatie, maar word niet als schadelijk voor milieu beschouwt. \\
+Als laatste beschouwen we LNG, zoals te zien in tabel~\ref{tab:fuel_comparison} merken we op dat LNG een gelijkwaardige LHF heeft als HFO, echter vanwege de lagere dichtheid is alsnog een 2 keer zo grote tank nodig. Daarnaast moet LNG bij een lage temperatuur van -162 graden gehouden worden, en zijn er verschillende veiligheidsvoorschriften waaronder een systeem voor het affakkelen van gas voor het reguleren van de druk. 
+
+
+
+\subsection{Uitstoot}
+Hoewel de fysische eigenschappen van de brandstoffen belangrijk zijn gaat het uiteindelijk om een doel, namelijk de uitstoot van schadelijke stoffen omlaag brengen. Een belangrijk aspect voor het bepalen van de uitstoot wat vaak over het hoofd word gezien is het Well to Wake(WtW) principe, hierin word niet alleen gekeken naar de uitstoot die uit de uitlaat komt maar word ook de uitstoot bij de productie van de brandstof mee genomen \cite{vidovic2023}. Volgens \cite{tadros2023} hangt de impact van het gebruik van synthetische brandstoffen vooral af van de manier hoe deze geproduceerd zijn, zo zijn synthetische brandstoffen die geproduceerd zijn met fossiele brandstoffen vaak nog schadelijker dan wanneer conventionele HFO verbrand word in de scheepsmotor. Ook \cite{vidovic2023} wijst op de energieverliezen die gepaard gaan met het produceren van synthetische brandstoffen met fossiele brandstoffen. Het is daarom belangrijk dat 'alternatieve' brandstoffen geproduceerd worden door middel van groene stroom of biomassa met effectieve carbon capture \cite{tadros2023}.\\
+Op Tank to Wake (TtW) niveau vertonen de brandstoffen verschillende knelpunten. Hoewel LNG 20 tot 25 procent minder $CO_2$ uitstoot dan HFO door de lagere koolstof-tot-waterstofverhouding, en nagenoeg geen $SO_x$ en PM uitstoot, kan methaan slip door het hoge aardopwarmingsvermogen de totale reductie te niet doen \cite{tadros2023, charvalos2025}.Voor koolstofhoudende alternatieven zoals methanol geldt nog steeds dat er $CO_2$ uit de uitlaat komt, alleen via bio-methanol kan een gesloten koolstofkring gevormd worden. Koolstofvrije alternatieven zoals ammoniak en waterstof elimineren $CO_2$ en $SO_x$ uit de uitlaat. Niettemin introduceerd de verbranding van ammoniak aanzienlijke $NO_x$ uitstoot en het risico op de vorming van lachgas($N_2O$) een broeikas gas wat vele malen schadelijker is dan $CO_2$ \citep{dimicco2024}. Bij de verbranding van waterstof komt alleen water vrij, maar door een energie intensieve opslag en af-fakkel verliezen is de efficiëntie in de keten lager \cite{vanhoecke2021challenges}.
+
+\newpage
+
+\section{Impact op scheepsontwerp}
+\label{sec:ontwerpimpact}
+
+\subsection{Tanks en Ruimtebeslag}
+De overstap naar alternatieve energiedragers heeft verstrekkende consequenties voor de ruimtelijke indeling en het tankvolume van vrachtschepen. Waar conventionele zware stookolie (HFO) flexibel kan worden opgeslagen in dubbele bodems en wingtanks zonder dat dit ten koste gaat van het laadruimvolume, vereisen alternatieve brandstoffen zoals vloeibaar aardgas (LNG), ammoniak en waterstof fundamenteel andere opslagconcepten \citep{mckenney2024}. Zoals weergegeven in Tabel~\ref{tab:fuel_comparison}, is het meest acute knelpunt de lage volumetrische energiedichtheid. Vloeibare waterstof ($\text{LH}_2$) heeft bij $-253\,^{\circ}\mathrm{C}$ een volumetrische energiedichtheid van circa 8,5~MJ/L, tegenover 40,0~MJ/L voor HFO. Zelfs ammoniak (12,7~MJ/L) en LNG (22,0~MJ/L) vereisen netto brandstofvolumes die een factor 1,8 tot 3,0 groter zijn om dezelfde energiewaarde te leveren \citep{vanhoecke2021challenges}.
+
+Dit volumeprobleem wordt sterk versterkt door de tankgeometrie en de ruimtefactor. Door de hoge ontwerpdruk en zware thermische vacuümisolatie moeten opslagtanks voor cryogene vloeistoffen of gecomprimeerde gassen cilindrisch of bolvormig worden geconstrueerd (IMO Type~C onafhankelijke tanks) \citep{vanhoecke2021challenges,akman2024}. Deze stijve geometrie kan zich niet aanpassen aan de dubbele-bodemkromming van de scheepsromp, wat leidt tot een aanzienlijk dood volume rondom de tanks (`broken stowage') en een werkelijke ruimtefactor van $3,5\times$ tot $4,2\times$ voor ammoniak en zelfs $8\times$ tot $12\times$ voor waterstof ten opzichte van HFO (zie Tabel~\ref{tab:fuel_comparison}) \citep{mckenney2024,dimicco2024}.
+
+Toegepast op de onderzochte Handymax-casus (35.000--50.000~DWT, route Rotterdam--Baltimore van 4.340 zeemijl) leidt dit tot een zwaar ontwerpdilemma. Bij een dienstsnelheid van 14 knopen bedraagt de reisduur circa 13 dagen. Voor een conventionele Handymax vergt een enkele oversteek ruwweg 300 ton HFO, eenvoudig inpasbaar in de dubbele bodem. Voor ammoniak loopt het benodigde volume echter op naar ruim 900~m$^3$; bij vloeibare waterstof zelfs naar meer dan 1.400~m$^3$. Omdat in Baltimore commerciële zero-emissie bunkerinfrastructuur ontbreekt (zie Sectie~\ref{sec:randvoorwaarden_onzekerheden}), dwingt dit het schip om in Rotterdam brandstof te bunkeren voor een volledige retourreis (8.680 zeemijl), waardoor de benodigde tankcapaciteit verdubbelt naar respectievelijk circa 1.800~m$^3$ (ammoniak) en 2.800~m$^3$ (waterstof).
+
+\subsection{Gewicht, Laadvermogen en Stabiliteit}
+Omdat Type~C-tanks vanwege structurele stijfheid en stringente botsingsafstanden volgens de IGF-code (minimale afstand tot de buitenhuid) niet in de dubbele bodem geplaatst kunnen worden, zijn ontwerpers gedwongen de tanks te positioneren in de traditionele laadruimen of op het open dek \citep{dahlkewallat2024}. 
+
+Plaatsing in de romp offert direct kostbare bulkruimte op. \citet{dimicco2024} kwantificeren dat het integreren van ammoniaktanks en brandstofcelsystemen resulteert in een verlies aan laadvermogen van circa 3,3\% tot 4,8\%. Voor de onderzochte Handymax betekent dit een direct verlies van circa 1.200 tot 2.400 ton aan nuttig laadvermogen (DWT) per reis. Aangezien het verdienmodel van bulkcarriers rust op marginale vrachtprijzen per ton lading, tast dit de rendabiliteit van het schip fundamenteel aan. 
+
+Het alternatief --- plaatsing van cilindrische tanks op het open dek (boven de luikhoofden of vóór de accommodatie) --- spaart het laadruimvolume weliswaar, maar introduceert ernstige operationele en stabiliteitstechnische nadelen. Dekopslag belemmert havenoperaties doordat het de kraanbewegingen en grijpers tijdens het laden en lossen van bulkgoederen hindert. Bovendien verhoogt de aanzienlijke massa van geïsoleerde Type~C-tanks hoog boven de scheepsbodem het verticale zwaartepunt van het schip (VCG of $KG$). Een verhoogd $KG$ verkleint de metacenterhoogte ($GM$), wat de initiële stabiliteit verslechtert en aanvullende ballastcapaciteit noodzakelijk maakt om aan de intacte en lekstabiliteitseisen van IMO te blijven voldoen \citep{papanikolaou2026}. 
+
+Voor waterstof concludeert de literatuur dat de vereiste tankvolumes voor deep-sea oversteken zoals de trans-Atlantische route praktisch onhaalbaar zijn: de combinatie van cryogene isolatie, boil-off-systemen en cilindrische tanks vreet een onevenredig groot deel van de romp op \citep{vanhoecke2021challenges,vidovic2023}. Voor de Handymax-casus wijst de literatuur daarom uit dat ammoniak en LNG de enige technisch integreerbare opties zijn. Wel vereist dit dat het traditionele ontwerpproces, waarin de rompvorm leidend was en het brandstofsysteem volgend, wordt vervangen door een ontwerpmethodiek waarin machinekamer- en tankintegratie simultaan met rompslankheid en energiebesparende maatregelen (zoals windondersteuning) worden geoptimaliseerd \citep{lindstad2022,tadros2023}.
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \section{Verklaring over gebruik van generatieve AI}
+%
+%Voor dit rapport voor het vak MT2462 Ship Design (SDRA Deel 1) hebben wij Generative AI gebruikt om:
+%
+%\begin{itemize}
+%    \item Delen van de tekst van dit verslag te cre\"eren op basis van door ons aangeleverde brongegevens en een gekozen artikellijst; deze onderdelen zijn hierboven met referenties onderbouwd.
+%    \item Inspiratie op te doen voor de structuur en indeling van het rapport (koppen, volgorde van secties gekoppeld aan de beoordelingsrubriek).
+%    \item Te assisteren bij het zoeken en verzamelen van kandidaat-literatuur (samenvattingen en metadata via Crossref/OpenAlex/Semantic Scholar) voorafgaand aan eigen beoordeling door het team.
+%\end{itemize}
+
+%Wij hebben het werk nagekeken en blijven zelf volledig verantwoordelijk voor de inhoud van dit rapport. \textit{[DRAFT --- dit is een eerlijke, voorlopige verklaring; pas aan op basis van wat jullie na review daadwerkelijk hebben overgenomen, herschreven of zelf hebben aangevuld voordat dit wordt ingeleverd.]}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Conclusie}
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \bibliography{references}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Appendixes}
+
+Niet van toepassing voor dit rapport.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \end{document}
